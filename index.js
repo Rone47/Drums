@@ -1,12 +1,13 @@
 
 //Detecting Button press
 var numberOfDrumbutton = document.querySelectorAll(".drum").length;
+var buttonInnerHTMl;
 
 for (var i = 0; i<numberOfDrumbutton; i++){
 
     document.querySelectorAll('.drum')[i].addEventListener("click", function(){
 
-        var buttonInnerHTML = this.innerHTML;
+     buttonInnerHTML = this.innerHTML;
 
         makeSound(buttonInnerHTML);
 
